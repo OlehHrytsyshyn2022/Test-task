@@ -27,8 +27,8 @@ body {
 
 
 .grid-item img {
-    max-width: 300px;
-    height: 230px;
+    max-width: 250px;
+    height: 250px;
 }
 
 .image-item {
@@ -47,4 +47,19 @@ body {
 .five,
 .nine {
     border: 5px solid red;
+}
+
+
+@media (max-width: 900px) {
+    .grid-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .grid-box {
+        display: block;
+        gap: 10px;
+    }
 }
