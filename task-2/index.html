@@ -9,46 +9,112 @@
   <body>
     <div class="wrapper">
       <div class="container">
-        <div class="current-img" id="currentImg"></div>
+        <div class="title" id="currentImg"></div>
         <br />
-        <div class="current-dATE" id="currentDate"></div>
+        <div class="title" id="currentDate"></div>
         <div class="grid-box">
           <div class="grid-item">
-            <img class="image-item one" src="./img/1.jpg" alt="photo" />
+            <img
+              class="image-item one"
+              src="./img/1.jpg"
+              alt="photo"
+              onclick="openImg(this)"
+            />
           </div>
           <div class="grid-item">
-            <img class="image-item" src="./img/2.jpg" alt="photo" />
+            <img
+              class="image-item"
+              src="./img/2.jpg"
+              alt="photo"
+              onclick="openImg(this)"
+            />
           </div>
           <div class="grid-item">
-            <img class="image-item" src="./img/3.jpg" alt="photo" />
+            <img
+              class="image-item"
+              src="./img/3.jpg"
+              alt="photo"
+              onclick="openImg(this)"
+            />
           </div>
           <div class="grid-item">
-            <img class="image-item" src="./img/4.jpg" alt="photo" />
+            <img
+              class="image-item"
+              src="./img/4.jpg"
+              alt="photo"
+              onclick="openImg(this)"
+            />
           </div>
           <div class="grid-item">
-            <img class="image-item five" src="./img/5.jpg" alt="photo" />
+            <img
+              class="image-item five"
+              src="./img/5.jpg"
+              alt="photo"
+              onclick="openImg(this)"
+            />
           </div>
           <div class="grid-item">
-            <img class="image-item" src="./img/6.jpg" alt="photo" />
+            <img
+              class="image-item"
+              src="./img/6.jpg"
+              alt="photo"
+              onclick="openImg(this)"
+            />
           </div>
           <div class="grid-item">
-            <img class="image-item" src="./img/7.jpg" alt="photo" />
+            <img
+              class="image-item"
+              src="./img/7.jpg"
+              alt="photo"
+              onclick="openImg(this)"
+            />
           </div>
           <div class="grid-item">
-            <img class="image-item" src="./img/8.jpg" alt="photo" />
+            <img
+              class="image-item"
+              src="./img/8.jpg"
+              alt="photo"
+              onclick="openImg(this)"
+            />
           </div>
           <div class="grid-item">
-            <img class="image-item nine" src="./img/9.jpg" alt="photo" />
+            <img
+              class="image-item nine"
+              src="./img/9.jpg"
+              alt="photo"
+              onclick="openImg(this)"
+            />
           </div>
           <div class="grid-item">
-            <img class="image-item" src="./img/10.jpg" alt="photo" />
+            <img
+              class="image-item"
+              src="./img/10.jpg"
+              alt="photo"
+              onclick="openImg(this)"
+            />
           </div>
           <div class="grid-item">
-            <img class="image-item" src="./img/11.jpg" alt="photo" />
+            <img
+              class="image-item"
+              src="./img/11.jpg"
+              alt="photo"
+              onclick="openImg(this)"
+            />
           </div>
           <div class="grid-item">
-            <img class="image-item" src="./img/12.jpg" alt="photo" />
+            <img
+              class="image-item"
+              src="./img/12.jpg"
+              alt="photo"
+              onclick="openImg(this)"
+            />
           </div>
+        </div>
+        <div class="modal" id="modal" onclick="closeImg()">
+          <span class="modal-close" id="close" onclick="closeImg()"
+            >&times;</span
+          >
+          <img id="modalImage" class="modal-img" src="" />
         </div>
       </div>
     </div>
