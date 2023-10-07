@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* TASK 1 */
+
+.task-1 {
+    margin-bottom: 50px;
+
+}
+
+.flag {
+    margin: 30px 0;
+}
+
+.flag-color {
+    height: 150px;
+    width: 500px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.flag-japan-white {
+    background-color: white;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.flag-japan-red {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.flag-iceland-blue {
+    background-color: blue;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.flag-iceland-red-vertical, .flag-iceland-red-horizontal-one, .flag-iceland-red-horizontal-two {
+    background-color: red;
+    height: 30px;
+    border-bottom: 10px solid white;
+    border-top: 10px solid white;
+}
+
+
+.flag-iceland-red-horizontal-one, .flag-iceland-red-horizontal-two {
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+
+.flag-iceland-red-horizontal-one {
+    left: 80px;
+    width: 135px;
+    top: 43px;
+}
+
+.flag-iceland-red-horizontal-two {
+    left: 80px;
+    bottom: 43px;
+    width: 136px;
+}
+
+
+.flag-czechia {
+    position: relative;
+}
+
+.flag-czechia-blue {
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 300px solid blue;
+    transform: rotate(90deg);
+}
+
+
+.flag-czechia-trapezoid {
+    position: absolute;
+    width: 200px;
+    height: 0;
+    border-left: 300px solid transparent;
+    border-bottom: 150px solid red;
+    border-top: 150px solid white;
+    top: 0px;
+    left: 0px;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+/* Task 2 */
+
+.task-2 {
+    padding-bottom: 50px;
+    width: 80%;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+.grid-item img {
+    max-width: 300px;
+    height: 230px;
+}
+
+.image-item {
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.image-item:hover {
+    cursor: pointer;
+    border: 5px solid yellow;
+    transform: rotate(45deg);
+}
+
+.one,
+.five,
+.nine {
+    border: 5px solid red;
+}
