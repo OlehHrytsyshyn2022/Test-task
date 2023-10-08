@@ -36,35 +36,42 @@ function App() {
 
   return (
     <form className="App" onSubmit={handleSubmit}>
-      <h2>Which university in the country are you interested in?</h2>
+      <h2 className="app-title">
+        Which university in the country are you interested in?
+      </h2>
       <input
         type="text"
         placeholder="Enter a country name"
         value={country}
         onChange={handleChange}
+        className="search-input"
       />
-      <button type="submit">Відправити</button>
-      <button type="button" onClick={reset}>
+      <button type="submit" className="submit-button">
+        Відправити
+      </button>
+      <button type="button" onClick={reset} className="reset-button">
         Скинути
       </button>
-      <div id="resultTableContainer">
-        <table>
-          <thead>
-            <tr>
-              <th>Назва країни</th>
-              <th>Назва Університету</th>
-              <th>Домени</th>
-              <th>Веб-сторінки</th>
+      <div className="container">
+        <table className="table">
+          <thead className="table-header">
+            <tr className="table-row">
+              <th className="table-cell">Назва країни</th>
+              <th className="table-cell">Назва Університету</th>
+              <th className="table-cell">Домени</th>
+              <th className="table-cell">Веб-сторінки</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="table-body">
             {searchResults.map((country) => (
-              <tr key={country.alpha_two_code}>
-                <td>{country.country}</td>
-                <td>{country.name}</td>
-                <td>{country.domains}</td>
-                <td>
-                  <a href={country.web_pages}>{country.web_pages}</a>
+              <tr className="table-row" key={country.alpha_two_code}>
+                <td className="table-cell">{country.country}</td>
+                <td className="table-cell">{country.name}</td>
+                <td className="table-cell">{country.domains}</td>
+                <td className="table-cell">
+                  <a href={country.web_pages} className="web-link">
+                    {country.web_pages}
+                  </a>
                 </td>
               </tr>
             ))}
